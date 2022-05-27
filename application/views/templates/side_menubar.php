@@ -119,17 +119,17 @@
             <li class="treeview" id="mainOrdersNav">
               <a href="#">
                 <i class="fa fa-dollar"></i>
-                <span>Sales</span>
+                <span>Delivery Order</span>
                 <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
                 </span>
               </a>
               <ul class="treeview-menu">
                 <?php if(in_array('createOrder', $user_permission)): ?>
-                  <li id="addOrderNav"><a href="<?php echo base_url('orders/create') ?>"><i class="fa fa-circle-o"></i> Add New Sales</a></li>
+                  <li id="addOrderNav"><a href="<?php echo base_url('orders/create') ?>"><i class="fa fa-circle-o"></i> Add New Order</a></li>
                 <?php endif; ?>
                 <?php if(in_array('updateOrder', $user_permission) || in_array('viewOrder', $user_permission) || in_array('deleteOrder', $user_permission)): ?>
-                <li id="manageOrdersNav"><a href="<?php echo base_url('orders') ?>"><i class="fa fa-circle-o"></i> Manage Sales</a></li>
+                <li id="manageOrdersNav"><a href="<?php echo base_url('orders') ?>"><i class="fa fa-circle-o"></i> Manage Delivery Orders</a></li>
                 <?php endif; ?>
               </ul>
             </li>
